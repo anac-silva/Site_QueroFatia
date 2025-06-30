@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+@font-face {
+    font-family: 'FonteLogo'; 
+    src: url('/assets/fonts/rossanova/Rossanova-Light.otf') format('opentype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-primaria: #f1c5be;
+    --cor-secundaria: #44030b;
+    --cor-terciaria:#DBD2B4;
+    --cor-quartenaria: #D1A47F;
+    --cor-quintenária: #6A4325;
+}
+
+body{
+    font-family: 'Dosis', sans-serif;
+    background-color: var(--cor-primaria);
+}
+
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--cor-terciaria);
+    justify-content: center;
+}   
+
+#logo > img{
+    max-width: 60px;
+    border-radius: 50px;
+    justify-content: center;
+    padding: 10px;
+}
+
+h1{
+    font-size: 1.2rem;
+    color: var(--cor-secundaria);
+    padding: 5px 0;
+    font-family: 'FonteLogo', Arial;
+}
+
+section{
+    width: 90%;
+
+}
+
+#carrinho{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+    color: var(--cor-quintenária);
+}
+
+
+#carrinho > a{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    padding: 10px;
+    text-align: center;
+}
+
+#conteudo-carrinho{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    min-width: 220px;
+}
+
+.itens-carrinho{
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.itens-carrinho > img{
+    height: 60px;
+    border-radius: 5px;
+}
+
+.produto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.produto > h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cor-quintenária);
+}
+
+.produto > h4, #quantidade {
+    font-size: 0.6rem;
+    font-weight: 400;
+    padding: 0 5px;
+}
+
+.quantidade{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+    text-align: right;
+}
+
+#quantidade{
+    font-size: 0.8rem;
+}
+
+.quantidade > p {
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin: 3px;
+}
+
+.remove-carrinho{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 70px;
+    background-color: var(--cor-primaria);
+    border: none;
+    border-radius: 3px;
+}
+
+.remove-carrinho > p{
+    font-size: 0.6rem;
+}
+
+.remove-carrinho > img{
+    height: 10px ;
+    padding: 5px;
+}
+
+.remove-carrinho:hover{
+    background-color: var(--cor-quartenaria);
+}
+
+#total-carrinho{
+    text-align: right;
+    padding: 0.1rem;
+    font-size: 0.9rem;
+}
+
+#fechamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#entrega {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#endereco-entrega{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#rua{
+    width: 90%;
+}
+
+#numero{
+    width: 5%;
+}
+
+#bairro, #ref {
+    width: 45%;
+}
+
+#rua, #numero, #ref, #bairro {
+    height: 25px;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 4px;
+    border: solid 1px var(--cor-quintenária) ;
+
+}
+
+#endereco-retirada{
+    width: 80%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#endereco-retirada > p{
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+a > img {
+    width: 80%;
+}
+
+
+
+
