@@ -149,7 +149,7 @@ h2{
     padding: 5px;
 }
 
-.remove-carrinho:hover{
+.remove-carrinho:active{
     background-color: var(--cor-quartenaria);
 }
 
@@ -179,11 +179,11 @@ h2{
 }
 
 #rua{
-    width: 90%;
+    width: 80%;
 }
 
 #numero{
-    width: 5%;
+    width: 10%;
 }
 
 #bairro, #ref {
@@ -222,8 +222,28 @@ a{
 
 a > img {
     width: 80%;
+    border: solid 1px var(--cor-quintenária);
 }
 
+#enviar{
+    margin: 10px;
+    height: 25px;
+    width: 150px;
+    background-color: var(--cor-primaria);
+    border: none;
+    border-radius: 5px;
+}
 
+#enviar:active{
+    background-color: var(--cor-quartenaria);
+    
+}
+
+#mensagem {
+    padding: 20px;
+    color: var(--cor-secundaria);
+    text-decoration: underline;
+    font-weight: 500;
+}
 
 
