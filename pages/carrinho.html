@@ -16,34 +16,10 @@
     </header>
     <section id="carrinho">
         <h2>Itens Carrinho</h2>
-        <div id="conteudo-carrinho">
-            <div class="itens-carrinho">
-                <img src="/assets/imagens/produtos/bombom_de_morango.jpg" alt="foto de bombom no pote">
-                <div class="produto">
-                    <h3 class="nome">BOMBOM DE MORANGO</h3>
-                    <h4 class="valor">Valor unidade: R$ 13,00</h4>
-                </div>
-                <div class="quantidade">
-                    <p>Quantidade: 1</p>
-                    <p>Valor total R$ 39,00</p>
-                    <button class="remove-carrinho"><img src="/assets/imagens/icones/lixeiras.png" alt="Logo de um carrinho de compras"><p>Remover</p></button>
-                
-                </div>
-            </div>
-
-            <div class="itens-carrinho">
-                <img src="/assets/imagens/produtos/bombom_de_morango.jpg" alt="foto de bombom no pote">
-                <div class="produto">
-                    <h3 class="nome">BOMBOM DE MORANGO</h3>
-                    <h4 class="valor">Valor unidade: R$ 13,00</h4>
-                </div>
-                <div class="quantidade">
-                    <p>Quantidade: 1</p>
-                    <p>Valor total R$ 13,00</p>
-                    <button class="remove-carrinho"><img src="/assets/imagens/icones/lixeiras.png" alt="Logo de um carrinho de compras"><p>Remover</p></button>
-                </div>
-            </div>
-
+        <div class="conteudo-carrinho">
+            
+            <div id="itens-carrinho"></div>
+            
             <div id="total-carrinho">
                 <p>Total produtos: R$ 39,90</p>
                 <p>Frete: R$ 3,00</p>
@@ -91,9 +67,6 @@
         <a href="index.html" id> << Voltar ao menu inicial</a>
     </section>
 
-    <script type="module" src="/script/addCarrinho.js" ></script>
-    <script type="module" src="/script/entrega.js"></script>
-    <script type="module" src="/script/exibirPedido.js" ></script>
-    
+    <script type="module" src="/script/mainCarrinho.js"></script>
 </body>
 </html>
