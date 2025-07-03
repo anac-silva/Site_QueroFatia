@@ -14,14 +14,16 @@ export function configurarFinalizarPedido(modoDeEntrega) {
                 return;
             }
 
-
             const texto = document.createElement("p");
             texto.innerText = `Pedido finalizado, prazo de entrega de 40 min! A entrega será realizada no endereço: ${rua}, ${numero}, ${bairro}, ${referencia}`;
 
             mensagem.appendChild(texto);
 
-        } else{
+        } else if (modoDeEntrega === "Retirada") {
             alert('Pedido finalizado, prazo de retirada é de 20 min!')
+        } else {
+            alert('Por favor, selecione um modo de entrega!')
+            return;
         }
         
         localStorage.removeItem('carrinho');

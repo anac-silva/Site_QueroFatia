@@ -27,10 +27,11 @@ export function exibirCarrinho() {
         removeItemCarrinho.classList.add('remove-carrinho');    
         removeItemCarrinho.innerHTML = `<img src="/assets/imagens/icones/lixeiras.png" alt="Logo de uma lixeira"><p>Remover</p>`;
 
+        quantidadeItem.appendChild(removeItemCarrinho);
+
         itemCarrinho.appendChild(imagemProduto);
         itemCarrinho.appendChild(produto);
         itemCarrinho.appendChild(quantidadeItem);
-        itemCarrinho.appendChild(removeItemCarrinho);
         let container = document.querySelector('#itens-carrinho');
         if (!container) {
             container = document.createElement('div');
