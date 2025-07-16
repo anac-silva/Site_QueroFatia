@@ -57,8 +57,11 @@ a > img{
 #container-logo > h1{
     font-size: 2rem;
     color: var(--cor-secundaria);
-    padding: 5px 0;
     font-family: 'FonteLogo', Arial;
+}
+
+#container-logo > p{
+    padding: 10px 0;
 }
 
 
@@ -138,7 +141,7 @@ h2{
 
 }
 
-.compras{
+.box-botoes{
     width: 100%;
     display: flex;
     align-items: center;

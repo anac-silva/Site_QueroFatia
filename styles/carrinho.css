@@ -21,6 +21,9 @@
 body{
     font-family: 'Dosis', sans-serif;
     background-color: var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -31,6 +34,7 @@ header{
     align-items: center;
     background-color: var(--cor-terciaria);
     justify-content: center;
+    width: 100%;
 }   
 
 #logo > img{
@@ -48,14 +52,12 @@ h1{
 }
 
 section{
-    width: 90%;
-
-}
-
-#carrinho{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    align-items: center;
+    justify-content: center;
+
 }
 
 h2{
@@ -74,50 +76,53 @@ h2{
 
 .conteudo-carrinho{
     background-color: white;
-    padding: 10px;
+    padding: 2%;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    min-width: 220px;
+    min-width: 350px;
+    margin: 20px;
 }
 
 .itens-carrinho{
     display: flex;
-    align-items: stretch;
-    width: 100%;
+    flex-wrap: wrap;
+    flex-grow: 2;
     margin: 10px 0;
+    justify-content: space-between;
+    
 }
 
 .itens-carrinho > img{
     height: 60px;
     border-radius: 5px;
+
 }
 
 .produto {
-    min-width: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 5px;
+    flex-grow: 1;
 }
 
 .produto > h3 {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 500;
     color: var(--cor-quintenária);
+    flex-grow: 1;
 }
 
-.produto > h4, #quantidade {
-    font-size: 0.6rem;
+.produto > h4, .quantidade {
+    font-size: 0.7rem;
     font-weight: 400;
 }
 
 .quantidade{
     display: flex;
     flex-direction: column;
-    width: 100%;
     align-items: flex-end;
-    text-align: right;
     font-size: 0.8rem;
 }
 
@@ -147,7 +152,7 @@ h2{
     padding: 5px;
 }
 
-.remove-carrinho:active{
+.remove-carrinho:active {
     background-color: var(--cor-quartenaria);
 }
 
@@ -157,13 +162,34 @@ h2{
     font-size: 0.9rem;
 }
 
+#limpar-carrinho{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#limpar{
+    margin: 10px;
+    height: 25px;
+    width: 150px;
+    background-color: var(--cor-primaria);
+    border: none;
+    border-radius: 5px;
+}
+
+#limpar:active{
+    background-color: var(--cor-quartenaria);
+}
+
 #fechamento{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 #entrega {
+    max-width: 600px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -177,7 +203,7 @@ h2{
 }
 
 #rua{
-    width: 80%;
+    width: 70%;
 }
 
 #numero{
@@ -185,7 +211,7 @@ h2{
 }
 
 #bairro, #ref {
-    width: 45%;
+    width: 40%;
 }
 
 #rua, #numero, #ref, #bairro {
@@ -223,7 +249,7 @@ a > img {
     border: solid 1px var(--cor-quintenária);
 }
 
-#enviar{
+#finalizar-pedido{
     margin: 10px;
     height: 25px;
     width: 150px;
@@ -232,7 +258,7 @@ a > img {
     border-radius: 5px;
 }
 
-#enviar:active{
+#finalizar-pedido:active{
     background-color: var(--cor-quartenaria);
     
 }
