@@ -5,8 +5,6 @@
     src: url('/assets/fonts/rossanova/Rossanova-Light.otf') format('opentype');
 }
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -79,6 +77,7 @@ main{
     justify-content: center;
     width: 90%;
     margin: auto;
+    max-width: 1300px;
 }
 
 h2{

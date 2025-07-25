@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         itemCarrinho.classList.add('itens-carrinho');
 
         const imagemProduto = document.createElement('img');
-        imagemProduto.src = '/assets/imagens/produtos/' + item.nome.toLowerCase().replace(/\s+/g, '_') + '.jpg';
+        imagemProduto.src = '../assets/imagens/produtos/' + item.nome.toLowerCase().replace(/\s+/g, '_') + '.jpg';
         itemCarrinho.appendChild(imagemProduto);
 
         const itemProduto = document.createElement('div');
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const removerItem = document.createElement('button');
         removerItem.classList.add('remove-carrinho');
         removerItem.innerHTML = `
-            <img src="/assets/imagens/icones/lixeiras.png" alt="Logo de uma lixeira">
+            <img src="../assets/imagens/icones/lixeiras.png" alt="Logo de uma lixeira">
             <h5>Remover</h5>
         `;
 

@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'FonteLogo'; 
-    src: url('/assets/fonts/rossanova/Rossanova-Light.otf') format('opentype');
+    src: url('../assets/fonts/rossanova/Rossanova-Light.otf') format('opentype');
 }
 
 *{
