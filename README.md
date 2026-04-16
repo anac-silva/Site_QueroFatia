@@ -2,6 +2,8 @@
 
 **Quero Fatia** é uma página de pedidos online de bolos, doces e cafés. A proposta do site é oferecer uma experiência visual agradável e prática para que os usuários escolham suas fatias preferidas com facilidade e conforto.
 
+Acesse aqui: (https://anac-silva.github.io/Site_QueroFatia/)
+
 ## ✨ Funcionalidades
 
 - Navegação simples e responsiva
